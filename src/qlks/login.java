@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package qlikhachsan;
+
+package qlks;
 
 import java.awt.*;
 import javax.swing.*;
 
-public class login extends JFrame{
+public class login extends JFrame {
     login()
     {
         getContentPane().setBackground(Color.PINK);

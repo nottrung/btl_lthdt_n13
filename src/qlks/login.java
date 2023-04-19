@@ -42,7 +42,7 @@ public class login extends JFrame{
         thoat.setForeground(Color.white);
         add(thoat);
         
-        ImageIcon i2 = new ImageIcon(ClassLoader.getSystemResource("fileanh/pic2.jpg"));
+        ImageIcon i2 = new ImageIcon(ClassLoader.getSystemResource("icons/pic2.jpg"));
         Image i2_1 = i2.getImage().getScaledInstance(200, 200, Image.SCALE_DEFAULT);
         ImageIcon i2_2 = new ImageIcon(i2_1);
         JLabel anh2 = new JLabel(i2_2);

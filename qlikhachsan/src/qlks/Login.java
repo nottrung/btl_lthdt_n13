@@ -13,50 +13,44 @@ public class Login extends JFrame implements ActionListener {
     Ketnoi Knoi;
 
     Login() {
-        setBounds(500, 200, 300, 470);
-        getContentPane().setBackground(Color.PINK);//tao mau nen
-
         setLayout(null);
-
-        JLabel us = new JLabel("Ten Tai Khoan");
-        us.setBounds(15, 230, 100, 30);//vi tri
+        setBounds(500, 200, 300, 250);
+        getContentPane().setBackground(Color.PINK);//tao mau nen
+        setTitle("Đăng Nhập");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        JLabel us = new JLabel("Tên Tài Khoản");
+        us.setBounds(15, 20, 100, 30);//vi tri
         add(us);
 
         //box de dien ten tk
         usname = new JTextField();
-        usname.setBounds(105, 230, 150, 30);
+        usname.setBounds(110, 20, 150, 30);
         add(usname);
 
-        JLabel pw = new JLabel("Mat Khau");
-        pw.setBounds(15, 270, 100, 30);
+        JLabel pw = new JLabel("Mật Khẩu");
+        pw.setBounds(15, 70, 100, 30);
         add(pw);
 
         pword = new JPasswordField();
-        pword.setBounds(105, 270, 150, 30);
+        pword.setBounds(110, 70, 150, 30);
         add(pword);
 
         //nut dn
-        dn = new JButton("DANG NHAP");
-        dn.setBounds(60, 320, 150, 30);
+            dn = new JButton("ĐĂNG NHẬP");
+        dn.setBounds(60, 120, 150, 30);
         dn.setBackground(Color.BLACK);
         dn.setForeground(Color.white);
         dn.addActionListener(this);
         add(dn);
 
         //nut thoat
-        thoat = new JButton("THOAT");
-        thoat.setBounds(60, 360, 150, 30);
+        thoat = new JButton("THOÁT");
+        thoat.setBounds(60, 170, 150, 30);
         thoat.setBackground(Color.BLACK);
         thoat.setForeground(Color.white);
         thoat.addActionListener(this);
         add(thoat);
-
-        ImageIcon i2 = new ImageIcon(ClassLoader.getSystemResource("icons/pic2.jpg"));
-        Image i2_1 = i2.getImage().getScaledInstance(200, 200, Image.SCALE_DEFAULT);
-        ImageIcon i2_2 = new ImageIcon(i2_1);
-        JLabel anh2 = new JLabel(i2_2);
-        anh2.setBounds(40, 10, 200, 200);
-        add(anh2);
 
         setVisible(true);
     }
@@ -79,7 +73,7 @@ public class Login extends JFrame implements ActionListener {
                     new BangDK();
                 }else
                 {
-                    JOptionPane.showMessageDialog(this, "tai khoan hoac mat khau khong dung","ERROR", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(this, "tài khoản hoặc mật khẩu không đúng","ERROR", JOptionPane.ERROR_MESSAGE);
                 }
             }catch (Exception ex)
             {

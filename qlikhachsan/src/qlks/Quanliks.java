@@ -17,7 +17,7 @@ public class Quanliks extends JFrame implements ActionListener {
         add(anh1);
 
         //tao chu
-        JLabel nd1 = new JLabel("PHAN MEM QUAN LY KHACH SAN");
+        JLabel nd1 = new JLabel("PHẦN MỀM QUẢN LÝ KHÁCH SẠN");
         nd1.setBounds(0, 0, 1000, 60);
         nd1.setForeground(Color.BLACK);
         nd1.setFont(new Font("serif", Font.PLAIN, 22));
